@@ -1,0 +1,35 @@
+{% extends "idglobal/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <body>
+        <!--Top general definition of project-->
+        <p style = "padding-top: 5px; font-size: small; text-align: center;" >Preparing youth to understand pressing global issues and participate as responsible global citizens. 
+        </p> 
+        <!--Projects Section with scroll bar-->
+        <div id="ABC" style ="font-size: small; color: white;"> Projects and Research Threads </div>
+        <div class="container testimonial-group">
+            <div class="row text-center">
+              <a href="{% url 'reimagining' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4" ><img width = 150px src="{% static 'idglobal/Reimagining_migration.jpg' %}" alt=""></a><!--
+           --><a href="{% url 'global_children' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 150px src="{% static 'idglobal/Global_Children.jpg' %}" alt=""></a><!--
+           --><a href="{% url 'us_china' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 140px src="{% static 'idglobal/US_CHINA_LENS.jpg' %}" alt=""></a><!--
+           --><a href="{% url 'environmental_stew' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 130px src="{% static 'idglobal/ENVIRONMENTAL_STEW.jpg' %}" alt=""></a>
+            </div>
+          </div>
+          <p></p>
+
+          <!--Resource for Educators with scroll bar different CSS ID for colloring-->
+          <div id="XYZ" style ="font-size: small; color: white;"> Resources for Educators </div>
+          <div class="container testimonial-group">
+              <div class="row text-center">
+                <a href="{% url 'gtr' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4" ><img width = 150px src="{% static 'idglobal/THINKING_ROUTINES.jpg' %}" alt=""></a><!--
+             --><a href="{% url 'curriculum' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 130px src="{% static 'idglobal/CURRICULUM.jpg' %}" alt=""></a><!--
+             --><a href="{% url 'sig_ped' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 150px src="{% static 'idglobal/SIG_PED.jpg' %}" alt=""></a><!--
+             --><a href="{% url 'books' %}" style="margin-right:20px; padding: 5px;" class="col-xs-4"><img width = 125px src="{% static 'idglobal/books.jpg' %}" alt=""></a>
+              </div>
+            </div>
+
+        </div>
+            
+    </body>
+{% endblock %}

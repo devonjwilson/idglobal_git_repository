@@ -1,0 +1,15 @@
+{% extends "idglobal/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <body>
+    <p id="STD_IMAGE"><img src="{% static 'idglobal/Reimagining_migration.jpg' %}" class="img-fluid alt=" Responsive image"></p>
+    <br>
+    <a style="font-size: small;"> In Progress</a>
+    <br>
+    <p style = "clear:left;">
+    <a style = "margin-top: 20px; margin-bottom: 5px; color: rgb(89, 152, 116); font-size: 15px;">Related Resources:</a>
+    </p>
+    <a style = "font-size: 12px;" href="{% static 'idglobal/Mindfulness_Tasks.pdf' %}" download>Mindfulness Test</a> 
+    </body>
+{% endblock %}

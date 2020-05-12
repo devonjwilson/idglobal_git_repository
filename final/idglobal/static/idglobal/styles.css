@@ -1,0 +1,76 @@
+#ABC {
+    background-color: rgb(89, 152, 116);
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+#XYZ {
+    background-color: rgb(56, 86, 125);
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+#STD_IMAGE{
+    float: left;
+    width: 50%;
+    margin-right: 10px;
+    /*display: block;
+    width: 50%;
+    border-radius: 50%;
+    margin-right: auto;*/
+    }
+
+
+  input[type=submit] {
+    background-color: rgb(89, 152, 116);
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-decoration: none;
+    margin: 2px 1px;
+    cursor: pointer;
+    font-size: xx-small;
+  }
+
+/* The heart of the matter */
+.testimonial-group > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+.testimonial-group > .row > .col-xs-4 {
+  display: inline-block;
+  float: none;
+}
+
+.holder_a {   
+    width: auto;
+    display: inline-block;    
+  }
+  
+.holder_a img {
+    width: 50%; /* Will shrink image to 30% of its original width */
+    height: auto;    
+  }​  
+
+  .holder_b {   
+    width: auto;
+    display: inline-block;    
+  }
+  
+.holder_b img {
+    width: 65%; /* Will shrink image to 30% of its original width */
+    height: auto;    
+  }​  
+
+#indent { 
+    text-indent: 30px; 
+    text-align: left;
+    line-height: 100%;
+  }
+
+body {
+    padding: 10px;
+}

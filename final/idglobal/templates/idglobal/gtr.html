@@ -1,0 +1,16 @@
+{% extends "idglobal/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <body>
+    <p id="STD_IMAGE"><img src="{% static 'idglobal/GTR_MAIN.jpg' %}" class="img-fluid alt=" Responsive image"></p>
+    <br>
+    <a style="font-size: small;"> How can we effectively support students to engage in the kind of deep, relevant and long-lasting learning here proposed? How can we teach for global competence in ways that nurture global thinking dispositions? What kinds of scaffolds and tools can help teachers foster this forms of long- lasting global competence among students? In this section we share resources on global thinking routines, practical tools to nurture global thinking dispositions.
+    </a>
+    <br>
+    <p style = "clear:left;">
+    <a style = "margin-top: 20px; margin-bottom: 5px; color: rgb(89, 152, 116); font-size: 15px;">Related Resources:</a>
+    </p>
+    <a style = "font-size: 12px;" href="{% static 'idglobal/GTR_PDF.pdf' %}" download>Global Thinking Routines Packet</a> 
+    </body>
+{% endblock %}

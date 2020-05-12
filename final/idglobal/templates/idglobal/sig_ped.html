@@ -1,0 +1,15 @@
+{% extends "idglobal/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <body>
+    <p id="STD_IMAGE"><img src="{% static 'idglobal/SIG_PED_MAIN.jpg' %}" class="img-fluid alt=" Responsive image"></p>
+    <br>
+    <a style="font-size: small;"> In this study, we examine how exemplary teachers design signature learning experiences based on their understanding of (a) the world and why certain topics matter over others; (b) their disciplines and their standards in global terms; (c) the specific learning challenges that students confront when learning about the world; and (d) effective pedagogy. Our team is conceptualizing a signature pedagogies framework for global education that will prepare future teachers to teach about the world.</a>
+    <br>
+    <p style = "clear:left;">
+    <a style = "margin-top: 20px; margin-bottom: 5px; color: rgb(89, 152, 116); font-size: 15px;">Related Resources:</a>
+    </p>
+    <a style = "font-size: 12px;" href="{% static 'idglobal/Mindfulness_Tasks.pdf' %}" download>Mindfulness Test</a> 
+    </body>
+{% endblock %}

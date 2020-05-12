@@ -1,0 +1,15 @@
+{% extends "idglobal/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <body>
+    <p id="STD_IMAGE"><img src="{% static 'idglobal/GC_Main.jpg' %}" class="img-fluid alt=" Responsive image"></p>
+    <br>
+    <a style="font-size: small;"> Global competence is the capacity to examine local, global and intercultural issues, to understand and appreciate the perspectives and world views of others, to engage in open, appropriate and effective interactions with people from different cultures, and to act for collective well-being and sustainable development.</a>
+    <br>
+    <p style = "clear:left;">
+    <a style = "margin-top: 20px; margin-bottom: 5px; color: rgb(89, 152, 116); font-size: 15px;">Related Resources:</a>
+    </p>
+    <a style = "font-size: 12px;" href="{% static 'idglobal/GC_Book.pdf' %}" download>Book: Educating for Global Competence</a> 
+    </body>
+{% endblock %}

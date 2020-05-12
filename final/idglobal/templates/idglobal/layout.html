@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Interdisciplinary & Global Studies</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!--Link to CSS Stylesheet-->
+        <link href="{% static 'idglobal/styles.css' %}" rel="stylesheet">
+        
+        <!--This is where the NAV BAR starts - separated into columns to space out two icons. Ended up going with img-fluid and min formating for the images-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+          <div class="container">
+            <div class = "row justify-content-between">
+              <div class = "col-4 col-lg-4">
+                <a href="{% url 'index' %}">
+                  <img class="img-fluid" style="min-width: 80px" src="{% static 'idglobal/idglobal_logo.jpg' %}" alt="">
+              </a>
+              </div>
+              <div class = "col-5 col-lg-4" >
+            <a href="{% url 'definition' %}">
+                  <img class="img-fluid" style="min-width: 80px; padding-top: 5px;" src="{% static 'idglobal/compass_text.jpg' %}" alt="">
+            </a>
+              </div>
+              </div>
+          </div>
+        </nav>
+        
+    
+    </head>
+    <!--link to JAVASCRIP File-->
+    <script src="{% static 'idglobal/idglobal.js' %}"></script>
+    <body>        
+        <div class="body">
+        <!--Where the actual individual text comes in-->
+        {% block body %}
+        {% endblock %}
+        </div>
+    
+    <!--Where the footer lives - the form for submitting emails-->
+    <p style = "padding-top: 15px; color: rgb(89, 152, 116); font-size: 10px;">Sign Up for New Resources and Upcoming Events</p>
+    <ul>
+        <form onsubmit="alert('Your email has been added!');" action="{%url 'index' %}" method="post" style="font-size: x-small;">
+            {% csrf_token %}
+            {{form}}
+            <input type = "submit" value="Sign Up" >
+        </form>
+    </ul>  
+    </body>
+</html>
